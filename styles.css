@@ -1,0 +1,81 @@
+.header
+{
+	display: flex;
+	flex-direction: row;
+	background-color: rgba(100, 100, 100, 0.8);
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	left: 0%;
+	top: 0%;
+	z-index: 2;
+	color: white;
+}
+.header:hover
+{
+	background-color: rgba(100, 100, 100, 1);
+}
+.nav-bar
+{
+	flex: 1 1 auto;
+	display: flex;
+}
+.nav-link
+{
+	flex: 1 1 auto;
+	text-align: center;
+}
+img
+{
+	width: 75px;
+}
+@media (orientation: landscape)
+{
+	.body-block
+	{
+		width: 80%;
+		height: 100%;
+		display: block;
+		position: relative;
+		background-color: rgba(100, 100, 100, 0.4);
+		margin: 0 auto;
+		padding-top: 75px;
+		z-index: 1;
+		color: white;
+	}
+}
+@media (orientation: portrait)
+{
+	.body-block
+	{
+		width: 95%;
+		display: block;
+		position: absolute;
+		background-color: rgba(100, 100, 100, 0.6);
+		margin: 0 auto;
+		padding-top: 75px;
+		z-index: 1;
+		color: white;
+		top: 0;
+		left: 2.5%;
+	}
+}
+@media (orientation: landscape)
+{
+	.body-background
+	{
+		width: 100%;
+		display: block;
+		position: absolute;	
+		left: 0;
+		top: 0;
+		background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/EvVhCC0deijtsl1b4/repeating-black-and-white-square-pattern-design-computer-generated-seamless-loop-abstract-halftone-motion-background_h8928lslg_thumbnail-full01.png");
+		background-repeat: repeat-y;
+		padding: 0;
+		z-index: 0;
+	}
+}
+body
+{
+	align-items: center;
+}
