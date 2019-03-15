@@ -28,6 +28,7 @@
 img
 {
 	width: 75px;
+	filter: invert(100%);
 }
 @media (orientation: landscape)
 {
